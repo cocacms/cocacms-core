@@ -1,16 +1,12 @@
-'use strict';
+"use strict";
+const egg = require("egg");
 
-const Application = require('./lib/framework');
-const Agent = require('./lib/agent');
-const Plugin = require('./lib/plugin');
-const egg = require('egg');
+const Application = require("./lib/application.js");
+const Agent = require("./lib/agent.js");
+const AppWorkerLoader = require("./lib/loader/app_worker_loader.js");
 
-
-// clone egg API
-Object.assign(exports, egg);
-
-// override Application
-exports.Application = Application;
-exports.Agent = Agent;
-exports.Plugin = Plugin;
-
+module.exports = Object.assign(egg, {
+  Application,
+  Agent,
+  AppWorkerLoader
+});

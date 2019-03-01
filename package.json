@@ -1,13 +1,12 @@
 {
   "name": "@cocacms/cocacms",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "dependencies": {
     "egg": "^2.2.1",
     "egg-async-validate": "^1.0.1",
     "egg-cors": "^2.0.0",
-    "egg-mysql": "^3.0.0",
     "egg-router-plus": "^1.2.0",
-    "egg-scripts": "^2.5.0",
+    "file-system-cache": "^1.0.5",
     "koa-locales": "^1.8.0"
   },
   "devDependencies": {
