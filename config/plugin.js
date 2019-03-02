@@ -1,11 +1,6 @@
 'use strict';
 const path = require('path');
 
-// Mysql数据库
-exports.mysql = {
-  enable: true,
-  package: 'egg-mysql',
-};
 
 // 表单验证
 exports.asyncValidator = {
